@@ -7,7 +7,7 @@ class Boss < Oxidized::Model
 
   comment  '! '
 
-  prompt /^[^\s#>]+[#>]$/
+  prompt /^[^\s#>][\w\W]+[#>]$/
 
   # Handle the banner
   # to disable the banner on BOSS the configuration parameter is "banner disabled"
